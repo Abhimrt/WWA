@@ -77,12 +77,11 @@
       <button class="btn btn-success mt-5" onclick="{chat()}">CHAT</button>
       <script>
         function chat() {
-          alert("hello");
           let num = document.querySelector("input").value;
           if (num.length == 10) {
             window.location.href = `http://wa.me/+91${num}`;
           } else {
-            alert("Enter correct details");
+            alert("Enter correct Number");
           }
         }
       </script>
