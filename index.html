@@ -79,7 +79,7 @@
         function chat() {
           let num = document.querySelector("input").value;
           if (num.length == 10) {
-            window.location.href = `http://wa.me/+91${num}`;
+            window.open(`http://wa.me/+91${num}`, "_blank");
           } else {
             alert("Enter correct Number");
           }
